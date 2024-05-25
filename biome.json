@@ -1,0 +1,74 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
+	"files": {
+		"ignore": [
+			"*.d.ts",
+			"./**/*.js",
+			"./**/node_modules/**/*"
+		]
+	},
+	"organizeImports": {
+		"enabled": false
+	},
+	"formatter": {
+		"lineWidth": 120
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true,
+			"nursery": {
+				"all": true,
+				"useImportRestrictions": "off",
+				"noNodejsModules": "off",
+				"noConsole": "off",
+				"noUndeclaredDependencies": "off"
+			},
+			"a11y": {
+				"all": true,
+				"useKeyWithClickEvents": "off",
+				"useButtonType": "off",
+				"useValidAnchor": "off",
+				"noSvgWithoutTitle": "off"
+			},
+			"correctness": {
+				"all": true,
+				"noUndeclaredVariables": "off"
+			},
+			"complexity": {
+				"all": true,
+				"noForEach": "off",
+				"useSimplifiedLogicExpression": "off",
+				"noExcessiveCognitiveComplexity": "off",
+				"noUselessLoneBlockStatements": "off",
+				"noVoid": "off"
+			},
+			"style": {
+				"all": true,
+				"noParameterAssign": "off",
+				"useNamingConvention": "off",
+				"useSingleCaseStatement": "off",
+				"useNodejsImportProtocol": "off",
+				"noDefaultExport": "off",
+				"useFilenamingConvention": "off"
+			},
+			"suspicious": {
+				"all": true,
+				"noArrayIndexKey": "off",
+				"noExplicitAny": "off",
+				"noEmptyBlockStatements": "off",
+				"noConfusingVoidType": "off"
+			},
+			"security": {
+				"all": true,
+				"noDangerouslySetInnerHtml": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"quoteStyle": "single"
+		}
+	}
+}
